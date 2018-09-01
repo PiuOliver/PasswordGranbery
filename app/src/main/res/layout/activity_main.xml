@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerador de Senhas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtv_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:text="Digite o tamanho da senha:"
+        android:id="@+id/txtv_subtitle"
+        android:layout_below="@+id/txtv_title"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtv_subtitle"
+        android:layout_centerHorizontal="true"
+        android:ems="5"
+        android:id="@+id/edtT_tamanho"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtT_tamanho"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l_Layout1"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inclui Símbolos:"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="(e.g @#$%)"
+            android:id="@+id/ckB_simbolo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_Layout1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l_Layout2"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inclui Números:"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="(e.g 123456)"
+            android:id="@+id/ckB_numero"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_Layout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/l_Layout3"
+        android:layout_marginTop="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inclui Letras Minúsculas:"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="(e.g abcdefgh)"
+            android:id="@+id/ckB_minusculo"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_Layout3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:id="@+id/l_Layout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inclui Letras Maiúsculas:"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="(e.g ABCDEFGH)"
+            android:id="@+id/ckB_maiusculo"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerar Senha"
+        android:layout_below="@+id/l_Layout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_phonelink_lock_black_24dp"
+        android:drawablePadding="15dp"
+        android:id="@+id/btn_gerarSenha"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/descricao"
+        android:layout_below="@+id/btn_gerarSenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Sua Senha Será:"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtv_new_senha"
+        android:layout_below="@+id/descricao"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
