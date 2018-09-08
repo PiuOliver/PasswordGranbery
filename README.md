@@ -8,5 +8,5 @@
 
 <h3>Descrição:</h3>
 <p> 
-  Projeto Desenvolvido mediante a um desafio feito dentro de sala de aula pelo professor Weligton Veiga. Neste aplicativo o mesmo pode gerar senhas com um tamanho e tipo de caracteres que o usuário desejar.
+  Projeto Desenvolvido mediante a um desafio feito dentro de sala de aula pelo professor Welington Veiga. Neste aplicativo o mesmo pode gerar senhas com um tamanho e tipo de caracteres que o usuário desejar.
 </p>
